@@ -9,8 +9,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>signup Page</title>
-    <link rel="stylesheet" href="../public/signup.css" />
+    <title>Login-Page</title>
+    <link rel="stylesheet" href="../public/login.css" />
+
   </head>
   <body>
     <div class="container">
@@ -30,20 +31,22 @@
       </div>
 
       <div class="main">
-        <!-- registration section -->
-        <div class="registration-section">
+        <!-- login section -->
+        <div class="login-section">
           <div class="left-container">
             <div id="img">
-              <h3>Welcome Dear</h3>
-              <p>To keep connected with us please create your account here</p>
+              <h3>Welcome Back</h3>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
               <button type="button" class="toggle-btn-1">
-                <a href="/login" target="_blank">Login Here</a>
+                <a href="/signup" target="_blank">Signup</a>
               </button>
             </div>
           </div>
 
           <div class="right-container">
-            <h3>Create Account</h3>
+            <h3>Sign In</h3>
             <div class="social-icons">
               <a href="#"> <i class="fa-brands fa-discord"></i></a>
               <a href="#">
@@ -54,17 +57,8 @@
                 <i class="fa-brands fa-square-instagram"></i>
               </a>
             </div>
-            <p>Or use your email for registration</p>
-            <form action="/login" , method="post">
-              <div class="form">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                  required
-                />
-              </div>
+            <p>Or use your account</p>
+            <form action="/login" method="post">
               <div class="form">
                 <input
                   type="email"
@@ -79,23 +73,18 @@
                   type="password"
                   id="password"
                   name="password"
-                  placeholder="password"
+                  placeholder="Password"
                   required
                 />
               </div>
               <div>
-                <button
-                  type="button"
-                  class="toggle-btn"
-                  data-section="registration"
-                >
-                  Signup
-                </button>
+                <button type="submit" class="toggle-btn">Login</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+
   </body>
 </html>

@@ -1,12 +1,16 @@
 const express = require("express");
 const app = express();
 app.set("view engine", "hbs");
-app.use(express.static("public"));
+app.use(express.static(__dirname, "../public"));
 const path = require("path");
 const hbs = require("hbs");
-const collection = require("mongodb");
+const collection = require("./mongodb");
+
+const tempelatePath = path.join(__dirname, "../tempelates");
 
 app.use(express.json());
+app.set("view engine", "hbs");
+app.set("views", tempelatePath);
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {

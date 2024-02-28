@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("../images/img-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10rem;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu > ul {
+  list-style: none;
+  display: flex;
+  gap: 4.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main {
+  min-height: 15vh;
+  width: 700px;
+  margin: auto;
+  margin-top: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: pink; */
+}
+
+.login-section {
+  width: 700px;
+  height: 360px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.login-section .right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+  height: 420px;
+  background-color: #fff;
+}
+
+.login-section .left-container {
+  width: 350px;
+  height: 360px;
+}
+
+#img {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/img-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+#img > h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#img > p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-top: 0.1rem;
+  padding: 0.5rem;
+}
+
+.toggle-btn-1 {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 1rem;
+}
+
+.toggle-btn-1 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.toggle-btn-1:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.toggle-btn-1 a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.login-section .right-container > h3 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  /* background-color: pink; */
+}
+
+.fa-brands {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  color: black;
+  margin-top: 0.5rem;
+  border: 0.1rem solid black;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.social-icons > a {
+  text-decoration: none;
+}
+
+.login-section .right-container > p {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: -20px;
+}
+
+.login-section .right-container > form {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+#para {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+.form > input {
+  padding: 0.3rem 0.4rem;
+}
+
+.form input {
+  margin-bottom: 5px;
+}
+
+.toggle-btn {
+  background-color: teal;
+  color: #fff;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 4.6rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  /* background-color: pink; */
+  text-align: center;
+}
+
+.toggle-btn:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  font-weight: 600;
+}
